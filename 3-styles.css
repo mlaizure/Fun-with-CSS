@@ -60,9 +60,9 @@
 
 .menu-item {
     height: 0;
+    width: 0;
     transition: height .1s linear;
     overflow: hidden;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +73,7 @@
     height: 60px;
     margin: 5px 0;
     width: 60px;
+    color: white;
     background: #C93638;
     border-radius: 50%;
     border: 1px solid #C93638;
