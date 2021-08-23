@@ -1,0 +1,17 @@
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #551a8b;
+    transition: 300ms;
+}
+
+a:hover:after {
+    width: 100%;
+}

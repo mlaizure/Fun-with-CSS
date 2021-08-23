@@ -1,0 +1,84 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.menu-open {
+    display: none;
+}
+
+.menu-open-button {
+    cursor: pointer;
+    background: #C93638;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s;
+}
+
+.menu-open-button:hover {
+    transform: scale(1.2);
+}
+
+.menu-open:checked ~ .menu-open-button {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+    transform: none;
+}
+
+.menu-line {
+    display: block;
+    width: 33%;
+    height: 3px;
+    background-color: white;
+}
+
+.menu-line-2 {
+    margin: 5px 0;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-2 {
+    display: none;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-1 {
+    transform: rotate(45deg);
+    margin-bottom: -3px;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-3 {
+    transform: rotate(-45deg);
+}
+
+.menu-item {
+    height: 0;
+    transition: height .1s linear;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-open:checked ~ .menu-item {
+    height: 60px;
+    margin: 5px 0;
+    width: 60px;
+    background: #C93638;
+    border-radius: 50%;
+    border: 1px solid #C93638;
+}
+
+.menu-open:checked ~ .menu-item:hover {
+    color: #C93638;
+    background-color: white;
+}
+
